@@ -1,13 +1,5 @@
 def bin_to_dec(numero: str):
-
-    soma = []
-    for k, i in enumerate(numero[::-1]):
-        if i == "0":
-            continue
-
-        soma.append(2**k)
-
-    return sum(soma)
+    return int(numero, 2)
 
 
 def dec_to_bin(numero: int):
@@ -20,5 +12,5 @@ def dec_to_bin(numero: int):
 if __name__ == "__main__":
     print(dec_to_bin(329))
     print(dec_to_bin(284))
-    print(bin_to_dec("11011101"))
+    print(bin_to_dec("101001001"))
     print(bin_to_dec("11001101"))
